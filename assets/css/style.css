@@ -1,6 +1,9 @@
 * {
   box-sizing: border-box;
 }
+body {
+  font-family: "Roboto", sans-serif;
+}
 .container {
   max-width: 1200px;
   margin: auto;
@@ -9,19 +12,27 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-top: 44px;
 }
-.search-input {
+.input {
   background-color: #ffffff;
   border: 1px solid #d9d9d9;
   border-radius: 2px;
-  height: 40px;
-  width: 690px;
   font-size: 16px;
-  line-height: 24px;
-  background-image: url("../img/Vector.png");
+  padding: 8px;
+  padding-left: 35px;
   background-repeat: no-repeat;
   background-position: left 11px center;
-  padding-left: 35px;
+
+  line-height: 24px;
+}
+.input-address {
+  width: 690px;
+  background-image: url("./img/Vector.png");
+}
+.input-search {
+  width: 300px;
+  background-image: url("./img/VectorS.svg");
 }
 .buttons {
   display: flex;
@@ -47,4 +58,278 @@
 }
 .button-icon {
   margin-right: 6px;
+}
+.promo {
+  box-shadow: 0px 7px 12px rgba(158, 158, 163, 0.1);
+  background: #fff1b8 url(../img/382142-svetik-removebg-preview.png) no-repeat
+    top right -200px;
+  border-radius: 10px;
+  padding: 55px 70px 45px 70px;
+  margin-top: 30px;
+  margin-bottom: 56px;
+}
+.promo-text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 28px;
+  max-width: 538px;
+}
+.section-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.section-title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 42px;
+  color: #000000;
+}
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-top: 2.75rem;
+  margin-bottom: 7.02rem;
+}
+.cards .card {
+  max-width: 23.6rem;
+  max-height: 24rem;
+  box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.05);
+  margin-bottom: 1.87rem;
+}
+.card .card-image {
+  border-radius: 0.4375rem 0.4375rem 0rem 0rem;
+  max-width: 100%;
+  max-height: 15.625rem;
+  margin-bottom: 1.29rem;
+  object-fit: cover;
+}
+.card .card-text .card-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0;
+}
+.card .card-text .card-title .card-link {
+  color: #000;
+  font-weight: 700;
+  line-height: 1rem;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+.card .card-text .card-title .time-for-cook {
+  max-height: 1.38rem;
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.25rem;
+  color: #fff;
+  background: #000;
+  padding: 0 0.5rem 0 0.5rem;
+  border-radius: 0.125rem;
+}
+.card .card-text .card-info {
+  margin-bottom: 2.2rem;
+}
+.card .card-text .card-info,
+.rate {
+  display: flex;
+  align-items: center;
+}
+.rate .rate-float {
+  margin-left: 0.25rem;
+  color: #ffc107;
+  font-weight: 700;
+  line-height: 2rem;
+  font-size: 1.125rem;
+}
+.pricelist {
+  margin-left: 1.62rem;
+  display: flex;
+}
+.pricelist .price {
+  color: #8c8c8c;
+  font-weight: 400;
+  line-height: 2rem;
+  font-size: 1.125rem;
+  margin-right: 0.5rem;
+}
+.price-coll::after {
+  content: "";
+  width: 5px;
+  height: 5px;
+  background-color: #8c8c8c;
+  display: inline-block;
+  vertical-align: middle;
+  border-radius: 50%;
+  margin-left: 0.5rem;
+}
+footer,
+.help,
+.help-list,
+.social {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+footer {
+  margin-bottom: 3.76rem;
+}
+.list-item {
+  list-style: none;
+  margin-left: 0.94rem;
+}
+.help-list {
+  margin-left: 1.28rem;
+}
+.link-list {
+  text-decoration: none;
+  color: #595959;
+  font-size: 1.125rem;
+  font-weight: 400;
+}
+.social-link {
+  margin-left: 1.31rem;
+}
+.product .info {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+.info .rate {
+  margin: 0 1.88rem 0 1.62rem;
+}
+.card .product-name {
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 2rem;
+  margin-bottom: 0.62rem;
+}
+.button-price .in-sc {
+  border: 1px solid #1890ff;
+  background: #1890ff url(./img/sc.svg) no-repeat right 1rem center;
+  color: #fff;
+  padding: 0 2rem 0 0.7rem;
+  margin-right: 0.63rem;
+  width: 7.75rem;
+}
+.card .compound {
+  max-width: 21rem;
+  color: #8c8c8c;
+  font-size: 1.125rem;
+  font-weight: 400;
+}
+.button-price {
+  display: flex;
+  margin-top: 1.55rem;
+}
+.button-price .product-price {
+  color: #000;
+  font-size: 1.25rem;
+  font-weight: 700;
+  line-height: 2rem;
+}
+.card .product-image {
+  border-radius: 0.4375rem 0.4375rem 0rem 0rem;
+}
+@media (max-width: 1366px) {
+  .container {
+    max-width: 960px;
+  }
+  .cards .card {
+    max-width: 40%;
+    max-height: 20%;
+    margin-bottom: 1.87rem;
+  }
+}
+@media (max-width: 1000px) {
+  .container {
+    max-width: 760px;
+  }
+  .promo {
+    max-height: 10.75rem;
+    background-size: 25rem;
+  }
+  .main-text {
+    padding: 1.95rem 0 2.95rem 2.43rem;
+  }
+  .promo .main-text .title {
+    font-size: 1.5rem;
+  }
+  .promo .main-text .text {
+    font-size: 1rem;
+  }
+  .cards .card {
+    max-width: 20.6rem;
+    max-height: 21rem;
+    margin-bottom: 1.87rem;
+  }
+}
+@media (max-width: 800px) {
+  .container {
+    max-width: 550px;
+  }
+  .cards {
+    justify-content: center;
+  }
+  .shopping-cart {
+    width: 6.2rem;
+    font-size: 0.7rem;
+  }
+  .help-list {
+    margin-left: 0.7rem;
+  }
+  .link-list {
+    font-size: 0.8rem;
+    margin-left: 0.3rem;
+  }
+  .social-link {
+    margin-left: 0.8rem;
+  }
+}
+@media (max-width: 600px) {
+  .container {
+    max-width: 450px;
+    overflow: hidden;
+  }
+  .promo {
+    max-height: 7.75rem;
+    background-size: 18rem;
+  }
+  .main-text {
+    padding: 0.95rem 0 0.95rem 0.43rem;
+  }
+  .promo .main-text .title {
+    font-size: 1rem;
+  }
+  .promo .main-text .text {
+    font-size: 0.5rem;
+  }
+  .help .logo {
+    visibility: hidden;
+  }
+  .help {
+    flex: 0.5;
+  }
+  .social {
+    flex: 0.3;
+  }
+  footer {
+    justify-content: end;
+    margin-bottom: 1.76rem;
+  }
+  .link-list {
+    font-size: 0.7rem;
+    margin-left: 0.3rem;
+  }
+  .rests .heading .rests-imput {
+    flex-wrap: wrap;
+  }
+  .rests .heading .title {
+    flex-basis: 100%;
+  }
 }

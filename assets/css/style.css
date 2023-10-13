@@ -97,7 +97,7 @@ body {
 }
 .cards .card {
   max-width: 23.6rem;
-  max-height: 24rem;
+  max-height: 28rem;
   box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.05);
   margin-bottom: 1.87rem;
 }
@@ -220,12 +220,12 @@ footer {
 .card .compound {
   max-width: 21rem;
   color: #8c8c8c;
-  font-size: 1.125rem;
+  font-size: 1rem;
   font-weight: 400;
 }
 .button-price {
   display: flex;
-  margin-top: 1.55rem;
+  margin-top: 1rem;
 }
 .button-price .product-price {
   color: #000;
